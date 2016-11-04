@@ -10,7 +10,6 @@ Phonetic recognition using SVM & MFCC
 
 MFCCとSVMで音声認識してみた実験コードです。全てC++によるフルスクラッチです。
 
----
 
 #### 実験
 
