@@ -33,7 +33,7 @@ int main(int argc, char *argv[]) {
         // 1vs1で予測する
         for (size_t i = 0; i < test_data.size(); i++) {
             int p = classifier::multiclass::predict_1vs1(n_class, classifiers, test_data[i]);
-			if (p == test_label[i]) {
+            if (p == test_label[i]) {
                 std::cout << colorant('g', format_str("predict=%d, label=%d", p, test_label[i])) << std::endl;
             } else {
                 std::cout << colorant('r', format_str("predict=%d, label=%d", p, test_label[i])) << std::endl;
@@ -49,7 +49,6 @@ int main(int argc, char *argv[]) {
         for (size_t i = 0; i < flatten.size(); i++) {
             ofs << format_str("%f %f %d", flatten[i][0], flatten[i][1], train_label[i]) << std::endl;
         }
-
     } catch (const std::exception &e) {
         std::cerr << colorant('y', format_str("error: %s", e.what())) << std::endl;
     }
