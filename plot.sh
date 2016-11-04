@@ -32,14 +32,14 @@ set offsets 0.1, 0.1, 0.1, 0.1
 #      "< awk '$3 == 1'  output" using 1:2 w p ls 6 ps 1.5 t '', \
 #      "< awk '$3 == -1' output" using 1:2 w p ls 8 ps 1.5 t ''
 
-# plot "< awk '$3 == 0' output" using 1:2 w p ls 2  ps 1.5 lw 1 t 'a', \
-#      "< awk '$3 == 1' output" using 1:2 w p ls 4  ps 1.5 lw 1 t 'i', \
-#      "< awk '$3 == 2' output" using 1:2 w p ls 6  ps 1.5 lw 1 t 'u', \
-#      "< awk '$3 == 3' output" using 1:2 w p ls 8  ps 1.5 lw 1 t 'e', \
-#      "< awk '$3 == 4' output" using 1:2 w p ls 1  ps 1.5 lw 1 t 'o', \
+plot "< awk '$3 == 0' output" using 1:2 w p ls 2  ps 1.5 lw 1 t 'a', \
+     "< awk '$3 == 1' output" using 1:2 w p ls 4  ps 1.5 lw 1 t 'i', \
+     "< awk '$3 == 2' output" using 1:2 w p ls 6  ps 1.5 lw 1 t 'u', \
+     "< awk '$3 == 3' output" using 1:2 w p ls 8  ps 1.5 lw 1 t 'e', \
+     "< awk '$3 == 4' output" using 1:2 w p ls 1  ps 1.5 lw 1 t 'o', \
 
-plot "< awk '$3 == 0' output" using 1:2 w p ls 2  ps 1.5 lw 1 t 'yukari', \
-     "< awk '$3 == 1' output" using 1:2 w p ls 4  ps 1.5 lw 1 t 'maki', \
-     "< awk '$3 == 2' output" using 1:2 w p ls 6  ps 1.5 lw 1 t 'akane', \
+# plot "< awk '$3 == 0' output" using 1:2 w p ls 2 lc rgb '#8E68A6' ps 1.5 lw 1 t 'yukari', \
+#      "< awk '$3 == 1' output" using 1:2 w p ls 4 lc rgb '#F5D800' ps 1.5 lw 1 t 'makimaki', \
+#      "< awk '$3 == 2' output" using 1:2 w p ls 6 lc rgb '#E2738A' ps 1.5 lw 1 t 'akane', \
 
 EOF
